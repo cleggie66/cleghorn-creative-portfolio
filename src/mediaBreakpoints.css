@@ -3,6 +3,18 @@
     .mobile {
         display: none;
     }
+
+    .services-group-1 {
+        margin-top: 8rem;
+    }
+
+    .services-group-3 {
+        margin-top: 14rem;
+    }
+
+    .services-group-4 {
+        margin-top: 2rem;
+    }
 }
 
 /* 481px–768px: For iPads and tablets */

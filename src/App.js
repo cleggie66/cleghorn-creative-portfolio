@@ -92,12 +92,6 @@ function App() {
       <div className="section-3">
         <div className="services">
           <div className="services-group-1">
-            <h4>Campaign</h4>
-            <p>Concept + Design</p>
-            <p>Event Collateral</p>
-            <p>Social Media Assets</p>
-          </div>
-          <div className="services-group-2">
             <h4>Branding</h4>
             <p>Brand Strategy</p>
             <p>Naming</p>
@@ -107,19 +101,29 @@ function App() {
             <p>Digital Collateral</p>
             <p>Packaging</p>
           </div>
-          <div className="services-group-3">
-            <h4>Content</h4>
-            <p>Product Videography + Photography</p>
-            <p>Animation</p>
-            <p>Media Editing</p>
-            <p>Data Visualization + Infographics</p>
-            <p>Presentation Design</p>
-            <h4 className='lower-services'>Web</h4>
+          <div className="services-group-2">
+            <h4>Web</h4>
             <p>Frontend Web Development</p>
             <p>Mobile Application Development</p>
             <p>Accessibility Compliance</p>
             <p>Backend Integration</p>
             <p>E-Commerce Integration</p>
+          </div>
+          <div className="services-group-3">
+            <h4>Campaign</h4>
+            <p>Concept + Design</p>
+            <p>Event Collateral</p>
+            <p>Social Media Assets</p>
+          </div>
+          <div className="services-group-4">
+            <h4>Content</h4>
+            <p>Product Videography</p>
+            <p>Product Photography</p>
+            <p>Animation</p>
+            <p>Media Editing</p>
+            <p>Data Visualization</p>
+            <p>Infographics</p>
+            <p>Presentation Design</p>
           </div>
         </div>
       </div>
