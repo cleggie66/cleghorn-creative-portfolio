@@ -1,0 +1,137 @@
+/* 768px+: For larger screens */
+@media only screen and (min-width: 768px) {
+    .mobile {
+        display: none;
+    }
+}
+
+/* 481px–768px: For iPads and tablets */
+@media only screen and (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+
+    .hero-heading {
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        font-size: 2.5rem;
+    }
+
+    h5 {
+        font-size: 2.5rem;
+        letter-spacing: 0.1rem;
+        line-height: 2.4rem;
+    }
+
+    h6 {
+        font-size: 2.5rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .services {
+        gap: 0;
+        width: 100%;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .services-group-2 {
+        align-self: flex-end;
+        text-align: end;
+    }
+
+    [class*="services-group"]>p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+
+    .contact-form-pre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form-pre h5 {
+        width: 75%;
+    }
+
+    .contact-form-pre svg {
+        align-self: flex-end;
+    }
+
+    .input-row {
+        flex-direction: column;
+    }
+
+    input {
+        font-size: 1rem;
+    }
+
+    form>textarea {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .input>input {
+        padding: 0.5rem 1rem;
+    }
+
+    .submit-button {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .hr-row {
+        display: none;
+    }
+
+    .hr-column {
+        display: none;
+    }
+
+    .contact-section {
+        width: 95%;
+        margin: 3rem;
+        box-sizing: content-box
+    }
+
+    .contact-section-center {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-section-left {
+        width: 100%;
+        padding: 0;
+    }
+
+    .contact-section .meeting-button {
+        box-sizing: border-box;
+        width: 100%;
+        font-size: 1.3rem;
+        padding: 0.4rem 0.6rem;
+    }
+
+    .meeting-button img {
+        width: 1.5rem;
+    }
+
+    .contact-section .email-link {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+        text-decoration: none;
+    }
+
+    .contact-form-text {
+        margin-top: 2rem;
+        width: 100%;
+        font-size: 1.1rem;
+        line-height: 1.1rem;
+    }
+
+    .contact-form-sent .meeting-button {
+        display: none;
+    }
+}

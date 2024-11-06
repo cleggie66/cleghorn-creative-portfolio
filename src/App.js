@@ -2,6 +2,10 @@ import { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser/es';
 import logo from './logo.svg';
 import './App.css';
+import './mediaBreakpoints.css';
+import grayArrow from "./media/gray-arrow.png";
+import whiteArrow from "./media/white-arrow.png";
+
 
 function App() {
   const form = useRef();
@@ -60,20 +64,16 @@ function App() {
     }
   }
 
-  console.log(hasSubmitted);
-  console.log(errors);
-  console.log(Object.values(errors).length)
-
-
-
-
 
   return (
     <>
       <div className="section-1">
         <div className='hero-heading'>
           <h2>
-            Harnesing the power of creativity to inspire, uplift, and brighten the world.
+            Harnesing the <br />
+            power of creativity <br />
+            to inspire, uplift, and <br />
+            brighten the world.
           </h2>
         </div>
       </div>
@@ -134,31 +134,31 @@ function App() {
                 your creative vision to life!
               </p>
             </div>
-            <a className="email-link" href="mailto:ashleigh@cleghorn-creative.com">
+            <a className="email-link desktop" href="mailto:ashleigh@cleghorn-creative.com">
               ashleigh@cleghorn-creative.com
             </a>
-            <a className="email-link" href="mailto:caleb@cleghorn-creative.com">
+            <a className="email-link desktop" href="mailto:caleb@cleghorn-creative.com">
               caleb@cleghorn-creative.com
             </a>
-            <a className='meeting-button' href="https://calendly.com/cleghorn-creative/30-minute-meeting?preview_source=et_card&month=2024-11" target='_blank' rel='noreferrer'>
+            <a className='meeting-button desktop' href="https://calendly.com/cleghorn-creative/30-minute-meeting?preview_source=et_card&month=2024-11" target='_blank' rel='noreferrer'>
               <p>Schedule a Meeting</p>
-              <svg
-                width="34"
-                height="33"
-                viewBox="0 0 34 33"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  stroke="#3F3F3F"
-                  d="M9.44118 2L31.5 2M31.5 2L2 31.5M31.5 2L31.5 22.5"
-                  strokeWidth="4"
-                />
-              </svg>
-
+              <img src={grayArrow} alt="arrow" />
             </a>
           </div>
         ) : (
           <div className="contact-form-pre">
+            <svg
+              width="100" height="100"
+              viewBox="0 0 230 220"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className='mobile'
+            >
+              <path
+                d="M169.2 162L134 187.2L94.8 135.6L56.8 187.2L20.8 162L59.2 107.6L0.800001 89.2L14 48.8L71.2 67.2V0.399986H118.4V67.2L175.6 48.8L190 89.2L130.8 107.6L169.2 162Z"
+                stroke="#3F3F3F"
+                strokeWidth="0.3rem" />
+            </svg>
             <h5>Let's talk next steps.</h5>
             <form onSubmit={sendEmail} ref={form}>
               <div className='input-row'>
@@ -258,19 +258,7 @@ function App() {
             <div className="contact-section-left">
               <a className='meeting-button' href="https://calendly.com/cleghorn-creative/30-minute-meeting?preview_source=et_card&month=2024-11" target='_blank' rel='noreferrer'>
                 <p>Schedule a Meeting</p>
-                <svg
-                  width="34"
-                  height="33"
-                  viewBox="0 0 34 33"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    stroke="#EEEEEE"
-                    d="M9.44118 2L31.5 2M31.5 2L2 31.5M31.5 2L31.5 22.5"
-                    strokeWidth="4"
-                  />
-                </svg>
-
+                <img src={whiteArrow} alt="arrow"/>
               </a>
               <h6>Contact</h6>
               <a className="email-link" href="mailto:ashleigh@cleghorn-creative.com">
@@ -284,7 +272,7 @@ function App() {
               <hr />
               <hr />
             </div>
-            <div className="contact-section-right">
+            <div className="contact-section-right desktop">
               <div className="contact-section-text">
                 <p>
                   We are dedicated to providing each client with designs is a collaborative journey, where both the client and designer play an important role.
@@ -293,7 +281,12 @@ function App() {
                   Our goal extends beyond meeting your project requirements; we want to make the design process enjoyable and rewarding for you. We’re excited to embark on this journey together to create something truly incredible.
                 </p>
               </div>
-              <svg width="186" height="186" viewBox="0 0 190 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                width="186" height="186"
+                viewBox="0 0 190 190"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path d="M169.2 162L134 187.2L94.8 135.6L56.8 187.2L20.8 162L59.2 107.6L0.800001 89.2L14 48.8L71.2 67.2V0.399986H118.4V67.2L175.6 48.8L190 89.2L130.8 107.6L169.2 162Z" fill="#EEEEEE" />
               </svg>
 
