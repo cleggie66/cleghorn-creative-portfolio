@@ -161,7 +161,7 @@ function App() {
               viewBox="0 0 230 220"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-                className='mobile rotate'
+              className='mobile rotate'
             >
               <path
                 d="M169.2 162L134 187.2L94.8 135.6L56.8 187.2L20.8 162L59.2 107.6L0.800001 89.2L14 48.8L71.2 67.2V0.399986H118.4V67.2L175.6 48.8L190 89.2L130.8 107.6L169.2 162Z"
@@ -211,15 +211,15 @@ function App() {
                     type="text"
                     name="preference"
                     id="preference"
-                    placeholder="Contact Preference"
                     value={preference}
                     onChange={(e) => setPreference(e.target.value)}
                   >
+                    <option disabled selected value="">Contact Preference</option>
                     <option value="no-preference">No Preference</option>
                     <option value="phone">Phone</option>
                     <option value="email">Email</option>
                   </select>
-                    <img src={arrowDark} alt="dropdown-arrow"/>
+                  <img src={arrowDark} alt="dropdown-arrow" />
                 </div>
               </div>
               <div className={`input ${hasSubmitted ? errors.message : ""}`}>
