@@ -5,6 +5,9 @@ import './App.css';
 import './mediaBreakpoints.css';
 import grayArrow from "./media/gray-arrow.png";
 import whiteArrow from "./media/white-arrow.png";
+import arrowDark from "./media/arrow-dark.png";
+import logoDark from "./media/logo-dark.png";
+import doodle1 from "./media/doodles/doodle1.gif"
 
 
 function App() {
@@ -68,6 +71,7 @@ function App() {
   return (
     <>
       <div className="section-1">
+        {/* <img className='doodle' src={doodle1} alt='doodle'/> */}
         <div className='hero-heading'>
           <h2>
             Harnesing the <br />
@@ -171,7 +175,7 @@ function App() {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                   />
-                  <p>*</p>
+                  <img src={logoDark} alt="required-asterisks" />
                 </div>
                 <div className={`input ${hasSubmitted ? errors.email : ""}`}>
                   <input
@@ -182,7 +186,7 @@ function App() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
-                  <p>*</p>
+                  <img src={logoDark} alt="required-asterisks" />
                 </div>
               </div>
               <div className='input-row'>
@@ -195,27 +199,34 @@ function App() {
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                   />
-                  <p>*</p>
+                  <img src={logoDark} alt="required-asterisks" />
                 </div>
                 <div className='input'>
-                  <input
+                  <select
                     type="text"
                     name="preference"
                     id="preference"
                     placeholder="Contact Preference"
                     value={preference}
                     onChange={(e) => setPreference(e.target.value)}
-                  />
-                  <p>*</p>
+                  >
+                    <option value="no-preference">No Preference</option>
+                    <option value="phone">Phone</option>
+                    <option value="email">Email</option>
+                  </select>
+                  <img src={arrowDark} alt="dropdown-arrow" />
                 </div>
               </div>
-              <textarea
-                className={`input ${hasSubmitted ? errors.message : ""}`}
-                rows="6"
-                placeholder="Tell us more about your project"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-              />
+              <div className='input'>
+                <textarea
+                  className={`input ${hasSubmitted ? errors.message : ""}`}
+                  rows="6"
+                  placeholder="Tell us more about your project"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                />
+                  <img src={logoDark} id="message-asterisks" alt="required-asterisks" />
+              </div>
               <div className='input-row'>
                 <div className='input'>
                   <input
@@ -232,7 +243,7 @@ function App() {
                     type="text"
                     name="date"
                     id="date"
-                    placeholder="Estimated Project Completion Date"
+                    placeholder="Est. Project Completion Date"
                     value={completionDate}
                     onChange={(e) => setCompletionDate(e.target.value)}
                   />
@@ -258,7 +269,7 @@ function App() {
             <div className="contact-section-left">
               <a className='meeting-button' href="https://calendly.com/cleghorn-creative/30-minute-meeting?preview_source=et_card&month=2024-11" target='_blank' rel='noreferrer'>
                 <p>Schedule a Meeting</p>
-                <img src={whiteArrow} alt="arrow"/>
+                <img src={whiteArrow} alt="arrow" />
               </a>
               <h6>Contact</h6>
               <a className="email-link" href="mailto:ashleigh@cleghorn-creative.com">
