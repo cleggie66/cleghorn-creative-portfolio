@@ -7,6 +7,7 @@ import grayArrow from "./media/gray-arrow.png";
 import whiteArrow from "./media/white-arrow.png";
 import arrowDark from "./media/arrow-dark.png";
 import logoDark from "./media/logo-dark.png";
+import logoError from "./media/logo-error.png";
 import doodle1 from "./media/doodles/doodle1.gif"
 
 
@@ -175,7 +176,7 @@ function App() {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                   />
-                  <img src={logoDark} alt="required-asterisks" />
+                  <img src={(hasSubmitted && errors.name) ? logoError : logoDark} alt="required-asterisks" />
                 </div>
                 <div className={`input ${hasSubmitted ? errors.email : ""}`}>
                   <input
@@ -186,7 +187,7 @@ function App() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
-                  <img src={logoDark} alt="required-asterisks" />
+                  <img src={(hasSubmitted && errors.email) ? logoError : logoDark} alt="required-asterisks" />
                 </div>
               </div>
               <div className='input-row'>
@@ -199,7 +200,7 @@ function App() {
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                   />
-                  <img src={logoDark} alt="required-asterisks" />
+                  <img src={(hasSubmitted && errors.phone) ? logoError : logoDark} alt="required-asterisks" />
                 </div>
                 <div className='input'>
                   <select
@@ -217,15 +218,14 @@ function App() {
                   <img src={arrowDark} alt="dropdown-arrow" />
                 </div>
               </div>
-              <div className='input'>
+              <div className={`input ${hasSubmitted ? errors.message : ""}`}>
                 <textarea
-                  className={`input ${hasSubmitted ? errors.message : ""}`}
                   rows="6"
                   placeholder="Tell us more about your project"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                 />
-                  <img src={logoDark} id="message-asterisks" alt="required-asterisks" />
+                <img src={(hasSubmitted && errors.message) ? logoError : logoDark} id="message-asterisks" alt="required-asterisks" />
               </div>
               <div className='input-row'>
                 <div className='input'>

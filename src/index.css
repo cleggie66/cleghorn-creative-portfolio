@@ -235,6 +235,12 @@ form textarea {
   padding: 0.5rem 2rem;
 }
 
+.input>textarea {
+  background-color: #00000000;
+  width: 100%;
+  padding: 0.5rem 2rem;
+}
+
 .input>select {
   background-color: #00000000;
   width: 100%;
