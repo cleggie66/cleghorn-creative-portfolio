@@ -378,3 +378,13 @@ form textarea {
   flex-direction: column;
   gap: 1rem;
 }
+
+.rotate {
+  animation: spinner 20s linear infinite;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
