@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "coolvetica", sans-serif;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +16,320 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  color: #EEEEEE;
+}
+
+h5 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  color: #3F3F3F;
+}
+
+h6 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  color: #EEEEEE;
+}
+
+input,
+textarea {
+  border: 0.1rem solid #00000000;
+}
+
+.input.error {
+  border: 0.1rem solid #E9401C;
+}
+
+.section-1 {
+  background-color: #EEEEEE;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-2 {
+  background-color: #EEEEEE;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-3 {
+  background-color: #3F3F3F;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-4 {
+  background-color: #EEEEEE;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.section-5 {
+  background-color: #3F3F3F;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-heading {
+  text-align: center;
+  width: 26%;
+  color: #3F3F3F;
+  font-size: 2rem;
+}
+
+.company-heading {
+  text-align: center;
+  text-transform: uppercase;
+  color: #3F3F3F;
+  font-size: 5.3vw;
+}
+
+.services {
+  width: 95%;
+  margin: 3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+[class*="services-group"]>p {
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  font-weight: 300;
+  color: #EEEEEE;
+}
+
+.lower-services {
+  margin-top: 2rem;
+}
+
+.contact-form-pre {
+  width: 95%;
+  margin: 3rem;
+}
+
+.contact-form-sent {
+  width: 95%;
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-sent .email-link {
+  align-self: flex-end;
+  padding: 0.5rem;
+  color: #3F3F3F;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+
+.contact-form-sent .meeting-button {
+  text-decoration: none;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  background-color: #00000000;
+  border: 0.1rem solid #3F3F3F;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  color: #3F3F3F;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.contact-form-pre>form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form-text {
+  width: 50%;
+  margin-top: 1rem;
+  color: #3F3F3F;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input {
+  color: #3F3F3F;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.input-row {
+  display: flex;
+  gap: 1rem;
+}
+
+form>textarea {
+  background-color: #D9D9D9;
+  color: #3F3F3F;
+  font-weight: 400;
+  font-size: 1.3rem;
+  padding: 0.5rem 2rem;
+}
+
+.input {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #D9D9D9;
+}
+
+.input>input {
+  background-color: #00000000;
+  width: 100%;
+  padding: 0.5rem 2rem;
+}
+
+.input>p {
+  color: #3F3F3F;
+  font-weight: 400;
+  font-size: 1.6rem;
+  padding: 0.5rem 2rem;
+}
+
+.submit-button {
+  flex-grow: 2;
+  color: #D9D9D9;
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  background-color: #3F3F3F;
+  cursor: pointer;
+  border: 0;
+}
+
+.submit-button:disabled {
+  color: #D9D9D9;
+  background-color: #aaaaaa;
+  cursor: not-allowed;
+}
+
+.contact-section {
+  width: 100%;
+  margin: 3rem 0;
+}
+
+.hr-row>hr {
+  width: 100%;
+  height: 0.1rem;
+  border-width: 0;
+  color: #D9D9D9;
+  background-color: #D9D9D9;
+}
+
+.hr-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hr-column {
+  display: flex;
+  gap: 1rem;
+}
+
+.hr-column>hr {
+  height: 100%;
+  width: 0.1rem;
+  border-width: 0;
+  color: #D9D9D9;
+  background-color: #D9D9D9;
+}
+
+.contact-section-center {
+  width: 100%;
+  display: flex;
+}
+
+.contact-section-left {
+  width: 40%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section .meeting-button {
+  text-decoration: none;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 65%;
+  background-color: #00000000;
+  border: 0.1rem solid #D9D9D9;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  color: #D9D9D9;
+  padding: 1rem;
+}
+
+.contact-section-left>h6 {
+  align-self: flex-end;
+  margin-top: 2rem;
+}
+
+.contact-section .email-link {
+  align-self: flex-end;
+  color: #D9D9D9;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+
+.contact-section-right {
+  width: 60%;
+  padding: 2rem;
+  color: #D9D9D9;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-section-text {
+  width: 60%;
+  color: #D9D9D9;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
