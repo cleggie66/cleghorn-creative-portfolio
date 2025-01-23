@@ -75,7 +75,7 @@ function App() {
         {/* <img className='doodle' src={doodle1} alt='doodle'/> */}
         <div className='hero-heading'>
           <h2>
-            Harnesing the <br />
+            Harnessing the <br />
             power of creativity <br />
             to inspire, uplift, and <br />
             brighten the world.
