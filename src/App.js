@@ -77,7 +77,7 @@ function App() {
   return (
     <>
       <div className="section-1">
-        <div class="wrapper">
+        {/* <div class="wrapper">
           <div class="doodle-container a">
             <img className='doodle' src={doodle1} alt='doodle' />
             <img className='doodle' src={doodle2} alt='doodle' />
@@ -115,18 +115,12 @@ function App() {
             <img className='doodle' src={doodle5} alt='doodle' />
             <img className='doodle' src={doodle7} alt='doodle' />
           </div>
-        </div>
+        </div> */}
         <div className='hero-heading'>
           <h2>Harnesing the</h2>
           <h2>power of creativity</h2>
           <h2>to inspire, uplift, and</h2>
           <h2 className="hero-last-line">brighten the world.</h2>
-          {/* <h2>
-            Harnesing the <br />
-            power of creativity <br />
-            to inspire, uplift, and <br />
-            brighten the world.
-          </h2> */}
         </div>
       </div>
       <div className="section-2">
