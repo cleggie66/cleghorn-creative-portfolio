@@ -9,6 +9,12 @@ import arrowDark from "./media/arrow-dark.png";
 import logoDark from "./media/logo-dark.png";
 import logoError from "./media/logo-error.png";
 import doodle1 from "./media/doodles/doodle1.gif"
+import doodle2 from "./media/doodles/doodle2.gif"
+import doodle3 from "./media/doodles/doodle3.gif"
+import doodle4 from "./media/doodles/doodle4.gif"
+import doodle5 from "./media/doodles/doodle5.gif"
+import doodle6 from "./media/doodles/doodle6.gif"
+import doodle7 from "./media/doodles/doodle7.gif"
 
 
 function App() {
@@ -68,18 +74,59 @@ function App() {
     }
   }
 
-
   return (
     <>
       <div className="section-1">
-        {/* <img className='doodle' src={doodle1} alt='doodle'/> */}
+        <div class="wrapper">
+          <div class="doodle-container a">
+            <img className='doodle' src={doodle1} alt='doodle' />
+            <img className='doodle' src={doodle2} alt='doodle' />
+            <img className='doodle' src={doodle5} alt='doodle' />
+          </div>
+          <div class="doodle-container b">
+            <img className='doodle' src={doodle7} alt='doodle' />
+            <img className='doodle' src={doodle2} alt='doodle' />
+          </div>
+          <div class="doodle-container c">
+            <img className='doodle' src={doodle3} alt='doodle' />
+            <img className='doodle' src={doodle1} alt='doodle' />
+            <img className='doodle' src={doodle5} alt='doodle' />
+          </div>
+          <div class="doodle-container d">
+            <img className='doodle' src={doodle4} alt='doodle' />
+          </div>
+          <div class="doodle-container e">
+          </div>
+          <div class="doodle-container f">
+            <img className='doodle' src={doodle5} alt='doodle' />
+          </div>
+          <div class="doodle-container g">
+            <img className='doodle' src={doodle6} alt='doodle' />
+            <img className='doodle' src={doodle1} alt='doodle' />
+            <img className='doodle' src={doodle2} alt='doodle' />
+          </div>
+          <div class="doodle-container h">
+            <img className='doodle' src={doodle6} alt='doodle' />
+            <img className='doodle' src={doodle7} alt='doodle' />
+
+          </div>
+          <div class="doodle-container i">
+            <img className='doodle' src={doodle1} alt='doodle' />
+            <img className='doodle' src={doodle5} alt='doodle' />
+            <img className='doodle' src={doodle7} alt='doodle' />
+          </div>
+        </div>
         <div className='hero-heading'>
-          <h2>
-            Harnessing the <br />
+          <h2>Harnesing the</h2>
+          <h2>power of creativity</h2>
+          <h2>to inspire, uplift, and</h2>
+          <h2 className="hero-last-line">brighten the world.</h2>
+          {/* <h2>
+            Harnesing the <br />
             power of creativity <br />
             to inspire, uplift, and <br />
             brighten the world.
-          </h2>
+          </h2> */}
         </div>
       </div>
       <div className="section-2">
@@ -102,20 +149,6 @@ function App() {
             <p>Packaging</p>
           </div>
           <div className="services-group-2">
-            <h4>Web</h4>
-            <p>Frontend Web Development</p>
-            <p>Mobile Application Development</p>
-            <p>Accessibility Compliance</p>
-            <p>Backend Integration</p>
-            <p>E-Commerce Integration</p>
-          </div>
-          <div className="services-group-3">
-            <h4>Campaign</h4>
-            <p>Concept + Design</p>
-            <p>Event Collateral</p>
-            <p>Social Media Assets</p>
-          </div>
-          <div className="services-group-4">
             <h4>Content</h4>
             <p>Product Videography</p>
             <p>Product Photography</p>
@@ -124,6 +157,36 @@ function App() {
             <p>Data Visualization</p>
             <p>Infographics</p>
             <p>Presentation Design</p>
+          </div>
+          <div className='services-group-combo'>
+            <div className="services-group-3">
+              <h4>Web</h4>
+              <p>Frontend Web Development</p>
+              <p>Mobile Application Development</p>
+              <p>Accessibility Compliance</p>
+              <p>Backend Integration</p>
+              <p>E-Commerce Integration</p>
+            </div>
+            <div className="services-group-4">
+              <h4>Campaign</h4>
+              <p>Concept + Design</p>
+              <p>Event Collateral</p>
+              <p>Social Media Assets</p>
+            </div>
+          </div>
+          <div className="services-group-5">
+            <h4>Interiors</h4>
+            <p>Schematic Design</p>
+            <p>Space Planning</p>
+            <p>2D Architectural Drawings</p>
+            <p>3D Perspective Renderings</p>
+            <p>Finishes Selection</p>
+            <p>Furniture Selection</p>
+            <p>Experiential Graphics</p>
+            <p>Accessories & Artwork</p>
+            <p>Project Management</p>
+            <p>Holiday & Special Event Decor</p>
+            <p>Animation</p>
           </div>
         </div>
       </div>
@@ -290,10 +353,14 @@ function App() {
             <div className="contact-section-right desktop">
               <div className="contact-section-text">
                 <p>
-                  We are dedicated to providing each client with designs is a collaborative journey, where both the client and designer play an important role.
+                  We are dedicated to providing each client with designs
+                  that align with their unique vision and mission. We believe that design is a
+                  collaborative journey, where both the client and designer play an important role.
                 </p>
                 <p>
-                  Our goal extends beyond meeting your project requirements; we want to make the design process enjoyable and rewarding for you. We’re excited to embark on this journey together to create something truly incredible.
+                  Our goal extends beyond meeting your project requirements; we want to
+                  make the design process enjoyable and rewarding for you. We’re excited
+                  to embark on this journey together to create something truly incredible.
                 </p>
               </div>
               <svg

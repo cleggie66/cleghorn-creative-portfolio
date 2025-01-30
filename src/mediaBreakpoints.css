@@ -4,16 +4,20 @@
         display: none;
     }
 
-    .services-group-1 {
-        margin-top: 8rem;
+    .services-group-2 {
+        margin-top: 4rem;
+        text-align: end;
     }
 
-    .services-group-3 {
-        margin-top: 14rem;
+    .services-group-5 {
+        align-self: flex-end;
+        text-align: end;
     }
 
-    .services-group-4 {
-        margin-top: 2rem;
+    .services-group-combo {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
 }
 
