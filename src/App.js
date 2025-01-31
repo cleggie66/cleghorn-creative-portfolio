@@ -180,7 +180,6 @@ function App() {
             <p>Accessories & Artwork</p>
             <p>Project Management</p>
             <p>Holiday & Special Event Decor</p>
-            <p>Animation</p>
           </div>
         </div>
       </div>
